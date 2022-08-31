@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>birthdayLuckChecker</title>
+</head>
+
+<body style="text-align: center">
+    <main>
+        <h1>Is your birthday lucky? 🤔</h1>
+        <h3>Let's find out:) 🤠</h3>
+        <div class="container">
+            <label for="date-of-birth">Date of birth:</label>
+            <input type="text" id="date-of-birth" placeholder="Enter your date of birth.."
+                onfocusin="(this.type='date')" onfocusout="(this.type='text')" required />
+            <label for="lucky-number">Lucky Number:</label>
+            <input type="number" id="lucky-number" placeholder="Enter your lucky number.." required />
+            <button id="check">Check</button>
+        </div>
+        <div id="output-msg"></div>
+        <div class="social-links">
+            <a class="link" href="https://github.com/mdakilahmed0" target="_blank">
+                <i class="fa-brands fa-github fa-3x"></i>
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/mdakilah/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            <a class="link" href="https://twitter.com/Md_Akil_Ahmed" target="_blank">
+                <i class="fa-brands fa-twitter fa-3x"></i>
+            </a>
+            <a class="link" href="https://www.instagram.com/akki6_/" target="_blank">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+        </div>
+        <div>
+    </main>
+    <footer>
+        <div class="privacy-notice">
+            <h2 style="text-decoration:underline;">Privacy Notice</h2>
+            <p>Please note that we are not collecting, storing and sharing any form of your data. Once the session has
+                been closed, all the data will erased from the server automatically.</p>
+        </div>
+    </footer>
+</body>
+<script src="app.js" type="text/javascript"></script>
+
+</html>
