@@ -11,7 +11,9 @@ function checkBirthdateIsLucky() {
   if (dobVal === "" || luckyNumVal === "") {
     messageOutput.innerText = "You need to enter both the values....";
   } else {
-    if (dobSum % luckyNumVal === 0) {
+    if(luckyNumVal < 0){
+      messageOutput.innerText = "Your lucky number should be a positive value....";
+    }else if (dobSum % luckyNumVal === 0) {
       messageOutput.innerText = "Your birthday is lucky";
     } else {
       messageOutput.innerText = "Sorry! Your birthday is not lucky";
